@@ -51,7 +51,7 @@ function brickCalculator(brick) {
 //find tiny smallest friend
 
 function tinyFriend(friendList) {
-    var smallestTinyFriend = friendList[0];
+    var smallestTinyFriend = friendList[0].length;
     for (var i = 0; i < friendList.length; i++) {
         var currentTinyFriend = friendList[i];
 
