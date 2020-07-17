@@ -52,8 +52,10 @@ function brickCalculator(brick) {
 
 function tinyFriend(friendList) {
     var smallestTinyFriend = friendList[0].length;
+    var tinyName = friendList[0];
     for (var i = 0; i < friendList.length; i++) {
         var currentTinyFriend = friendList[i];
+        var tinyName = currentTinyFriend ;
 
         if (currentTinyFriend < smallestTinyFriend) {
             smallestTinyFriend = currentTinyFriend;
@@ -62,5 +64,5 @@ function tinyFriend(friendList) {
             return "Friend list can not be Empty";
         }
     }
-    return smallestTinyFriend;
+    return tinyName ;
 }
